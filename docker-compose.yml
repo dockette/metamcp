@@ -11,7 +11,8 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV}
       DATABASE_URL: ${DATABASE_URL}
-      USE_DOCKER_HOST: ${USE_DOCKER_HOST}
+      BASIC_AUTH_USERNAME: ${BASIC_AUTH_USERNAME}
+      BASIC_AUTH_PASSWORD: ${BASIC_AUTH_PASSWORD}
     extra_hosts:
       - "host.docker.internal:host-gateway"
 

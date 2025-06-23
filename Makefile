@@ -20,7 +20,6 @@ download:
 	fi
 
 build:
-	$(MAKE) download
 	docker buildx build --platform ${DOCKER_PLATFORM} -t ${DOCKER_WEB_IMAGE} --target runner -f .tmp/metatool/Dockerfile .tmp/metatool
 	docker buildx build --platform ${DOCKER_PLATFORM} -t ${DOCKER_MIGRATOR_IMAGE} --target migrator -f .tmp/metatool/Dockerfile .tmp/metatool
 	docker buildx build --platform ${DOCKER_PLATFORM} -t ${DOCKER_HOSTING_IMAGE} -f .tmp/metatool/remote-hosting/Dockerfile .tmp/metatool/remote-hosting
