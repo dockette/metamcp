@@ -50,7 +50,7 @@ POSTGRES_PASSWORD=metamcp
 
 2. Create `docker-compose.yml` file.
 
-Copy [`docker-compose.yml`](./docker-compose.yml) file.
+Copy [`docker-compose.yml`](https://github.com/dockette/metamcp/blob/master/docker-compose.yml) file.
 
 3. Start Docker services.
 
